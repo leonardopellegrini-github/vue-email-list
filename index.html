@@ -12,8 +12,11 @@
 
   <div id="app">
 
-  <ul>
-    <li>{{nomeUtente}}</li>
+  <div v-if="loading">Attendi</div>
+  <ul v-else>
+    <li>
+      {{nomeUtente}}
+    </li>
   </ul>
 
   </div>
